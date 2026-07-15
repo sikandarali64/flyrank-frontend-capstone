@@ -1,3 +1,27 @@
+# Flyrank Frontend Capstone
+
+Frontend AI Engineering track capstone project.
+
+## Tech Stack
+- React
+- Tailwind CSS
+- Node.js
+- Claude AI
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+```bash
+npm install
+npm run dev
+```
+
+---
+
 # HMS Pro - Login Form
 
 A modern, accessible login form for Hospital Management System Pro.
@@ -42,7 +66,8 @@ For testing purposes:
 ├── index.html      # Main HTML structure
 ├── styles.css      # All styling with CSS variables
 ├── app.js          # Form logic and validation
-└── README.md       # Documentation
+├── README.md       # Documentation
+└── WORKFLOW.md     # Lazy vs Precise Prompting Exercise
 ```
 
 ## Browser Support
@@ -53,10 +78,6 @@ For testing purposes:
 - Edge (latest)
 
 ## Development
-
-### Prerequisites
-- Modern web browser
-- Text editor (VS Code recommended)
 
 ### Running Locally
 1. Open `index.html` in your browser
@@ -79,3 +100,13 @@ For testing purposes:
 | Remember Me | ⚠️ Basic | ✅ localStorage |
 | Responsive | ⚠️ Basic | ✅ Mobile-first |
 | Code Quality | ❌ Minimal | ✅ Well-documented |
+
+## Branches
+
+- `main` - Main branch with project documentation
+- `fe-03-round1-lazy` - Round 1: Lazy prompt output
+- `fe-03-round2-precise` - Round 2: Precise prompt output
+
+## Documentation
+
+- [WORKFLOW.md](./WORKFLOW.md) - Lazy vs Precise Prompting Exercise
