@@ -1,112 +1,109 @@
-# Flyrank Frontend Capstone
+# HMS Pro - Login Form Capstone
 
-Frontend AI Engineering track capstone project.
+A modern frontend login form built as part of the FlyRank frontend AI engineering capstone. The project focuses on form validation, accessibility, UX, and security-conscious frontend patterns.
 
-## Tech Stack
-- React
-- Tailwind CSS
-- Node.js
-- Claude AI
+## Overview
 
-## Getting Started
+This project demonstrates how to build a production-quality login form with:
 
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
-
-### Installation
-```bash
-npm install
-npm run dev
-```
-
----
-
-# HMS Pro - Login Form
-
-A modern, accessible login form for Hospital Management System Pro.
+- real-time validation
+- password strength indicators
+- accessibility features for keyboard and screen-reader users
+- clean mobile-first styling
+- polished success/error feedback
 
 ## Features
 
-### Form Validation
-- Real-time email validation with regex pattern
-- Password strength indicator (weak/fair/good/strong)
-- Minimum password length enforcement (8 characters)
-- Inline error messages with ARIA support
-
-### Accessibility (WCAG 2.1 AA)
-- Proper label associations
-- ARIA attributes for screen readers
-- Keyboard navigation support
-- Focus visible indicators
-- Reduced motion support
-
-### User Experience
+- Email validation with inline feedback
+- Password strength meter
+- Minimum password length enforcement
 - Show/hide password toggle
-- Remember me functionality (localStorage)
-- Loading state during submission
-- Success/error alerts with animations
-- Responsive design (mobile-first)
+- Remember me functionality using `localStorage`
+- Loading state while submitting
+- Responsive mobile-first layout
+- A11y improvements such as focus states, labels, and semantic HTML
 
-### Security Considerations
-- No sensitive data in localStorage
-- Form validation on client and server
-- CSRF protection ready
-- Rate limiting ready
+## Tech Stack
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Accessibility-first frontend design
+
+## Project Structure
+
+```text
+flyrank-frontend-capstone/
+├── index.html
+├── styles.css
+├── app.js
+├── README.md
+├── WORKFLOW.md
+└── assets/
+```
+
+## Getting Started
+
+1. Clone the project:
+
+```bash
+git clone https://github.com/sikandarali64/flyrank-frontend-capstone.git
+cd flyrank-frontend-capstone
+```
+
+2. Open the app locally:
+
+```bash
+python -m http.server 8000
+```
+
+3. Visit:
+
+```text
+http://localhost:8000
+```
 
 ## Demo Credentials
 
 For testing purposes:
-- **Email:** admin@hospital.com
-- **Password:** Admin@123
 
-## File Structure
+```text
+Email: admin@hospital.com
+Password: Admin@123
+```
 
-```
-├── index.html      # Main HTML structure
-├── styles.css      # All styling with CSS variables
-├── app.js          # Form logic and validation
-├── README.md       # Documentation
-└── WORKFLOW.md     # Lazy vs Precise Prompting Exercise
-```
+## Accessibility Notes
+
+The form includes:
+
+- associated labels for inputs
+- proper `aria` attributes where needed
+- visible focus states
+- reduced-motion support
+- screen-reader-friendly validation messages
+
+## Validation Behavior
+
+- Email must follow a valid format
+- Password must be at least 8 characters
+- Stronger passwords receive stronger UI feedback
+- Invalid inputs show clear inline errors
 
 ## Browser Support
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+- Chrome
+- Firefox
+- Edge
+- Safari
 
-## Development
+## Notes
 
-### Running Locally
-1. Open `index.html` in your browser
-2. No build step required
+This is a frontend-only project and is meant to demonstrate UI/UX quality rather than a complete backend authentication system.
 
-### Code Quality
-- ESLint compatible
-- Prettier formatting
-- JSDoc comments
+## License
 
-## Round 2 Improvements (vs Round 1)
+MIT
 
-| Feature | Round 1 (Lazy) | Round 2 (Precise) |
-|---------|----------------|-------------------|
-| Validation | ❌ None | ✅ Full client-side |
-| Error Handling | ❌ None | ✅ Comprehensive |
-| Accessibility | ❌ Basic | ✅ WCAG 2.1 AA |
-| Password Strength | ❌ None | ✅ Visual indicator |
-| Loading States | ❌ None | ✅ Spinner + disabled |
-| Remember Me | ⚠️ Basic | ✅ localStorage |
-| Responsive | ⚠️ Basic | ✅ Mobile-first |
-| Code Quality | ❌ Minimal | ✅ Well-documented |
+## Author
 
-## Branches
-
-- `main` - Main branch with project documentation
-- `fe-03-round1-lazy` - Round 1: Lazy prompt output
-- `fe-03-round2-precise` - Round 2: Precise prompt output
-
-## Documentation
-
-- [WORKFLOW.md](./WORKFLOW.md) - Lazy vs Precise Prompting Exercise
+Sikandar Ali - https://github.com/sikandarali64
